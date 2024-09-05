@@ -1,4 +1,3 @@
-
 \ifx\ThesisType\undefined
 Undefined Thesis type in settings.tex
 \else
@@ -56,9 +55,9 @@ Undefined Thesis type in settings.tex
 \mbox{}
 \vfill
 \renewcommand{\familydefault}{\sfdefault} \normalfont % Set cover page font
-\textbf{{\Huge 	\subject 	\\[0.2cm] }} 	\\[0.5cm]
+\textbf{{\Huge 	\maintitle 	\\[0.2cm] }} 	\\[0.5cm]
 
-{\small \maintitle \\[0.2cm]}
+% {\small \maintitle \\[0.2cm]}
     
 % {\Large A Subtitle that can be Very Much Longer if Necessary}\\[0.5cm]
 % Master's thesis in Master Programme Name \setlength{\parskip}{1cm}
@@ -79,78 +78,3 @@ Undefined Thesis type in settings.tex
 
 \renewcommand{\familydefault}{\rmdefault} \normalfont % Reset standard font
 \end{titlepage}
-
-
-% BACK OF COVER PAGE (BLANK PAGE)
-\newpage
-\restoregeometry
-\thispagestyle{empty}
-\mbox{}
-
-
-% TITLE PAGE
-\newpage
-\thispagestyle{empty}
-\begin{center}
-	\textsc{\large \subject \the\year}\\[4cm]
-	\textbf{\Large \maintitle} \\[1cm]
-	% {\large A Subtitle that can be Very Much Longer if Necessary}\\[1cm]
-	{\large \authorm} \\[0.1cm]
-        {\large \authorp} \\[0.1cm]
-        {\large \authort}
-	
-	\vfill	
-	% Logotype on titlepage	
-	\begin{figure}[H]
-	\centering
-	% Remove this figure to remove the titlepage logotype
-	\if\ThesisType M
-    \includegraphics[width=0.2\pdfpagewidth]{figure/auxiliary/logo_circle.png} \\
-    \fi
-    \if\ThesisType B
-    \includegraphics[width=0.2\pdfpagewidth]{figure/auxiliary/logo_circle.png} \\
-    \fi
-
-	\end{figure}	\vspace{5mm}	
-	
-	\dept \\
-	% \emph{Division of Division name}\\
-	% Name of research group (if applicable)\\
-	\textsc{\university} \\
-	\address \  \the\year \\
-\end{center}
-
-
-% IMPRINT PAGE (BACK OF TITLE PAGE)
-\newpage
-\thispagestyle{plain}
-\vspace*{4.5cm}
-\maintitle \\
-% A Subtitle that can be Very Much Longer if Necessary\\
-\\[0.1cm]
-\authorm \\
-\authorp \\
-\authort
-\setlength{\parskip}{1cm}
-
-% \copyright ~ NAME FAMILYNAME, \the\year. \setlength{\parskip}{1cm}
-
-Supervisor: \supervisor \\
-Examiner: \examiner \setlength{\parskip}{1cm}
-
-\subject \\	
-\dept \\
-% Division of Division name\\
-% Name of research group (if applicable)\\
-\university \\
-\address \\
-% Telephone +46 31 772 1000 
-\setlength{\parskip}{0.5cm}
-
-\vfill
-% Caption for cover page figure if used, possibly with reference to further information in the report
-Cover - \textbf{Contrast in Commerce:} A Generative Image of Closed Shops and Bustling Online Markets. \setlength{\parskip}{0.5cm}
-
-Typeset in \LaTeX \tagtemp\\
-Printed by XXX \\
-\address \ \the\year

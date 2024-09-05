@@ -13,7 +13,9 @@
 
 % COVER PAGE, TITLE PAGE AND IMPRINT PAGE
 \pagenumbering{roman}			% Roman numbering (starting with i (one)) until first main chapter
-% \input{include/frontmatter/Titlepage}
+\input{include/frontmatter/Titlepage}
+% \input{include/frontmatter/MainTitlePage}
+\input{include/frontmatter/Imprint}
 
 % ABSTRACT
 % \newpage
@@ -35,6 +37,7 @@
 
 % TABLE OF CONTENTS
 % \newpage
+\setlength{\parskip}{0em}
 \tableofcontents
 
 % OTHER FRONTMATTER
@@ -54,6 +57,8 @@
 \pagenumbering{arabic}
 
 % INTRODUCTION
+\parskip = 8pt plus 2pt minus 2pt
+\setlength{\parindent}{5em}
 \input{include/Introduction}
 
 % THEORY
@@ -65,7 +70,7 @@
 \input{include/Methods}
 
 % ANALYSIS
-\input{include/Analysis}
+% \input{include/Analysis}
 
 % RESULTS
 \input{include/Results}
@@ -73,6 +78,8 @@
 % CONCLUSION
 % \input{include/Timeplan}
 \input{include/Discussion}
+
+\input{include/Conclusion}
 
 % REFERENCES / BIBLIOGRAPHY
 \cleardoublepage
